@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Mantenimiento</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mantenimiento.Domain\Mantenimiento.Domain.csproj" />
+    <ProjectReference Include="..\Mantenimiento.Application.Contracts\Mantenimiento.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="7.1.1" />
+  </ItemGroup>
+
+</Project>

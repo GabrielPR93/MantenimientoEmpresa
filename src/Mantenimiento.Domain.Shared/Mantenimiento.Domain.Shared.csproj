@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Mantenimiento</RootNamespace>
+    <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Volo.Abp.Identity.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.BackgroundJobs.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.AuditLogging.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="7.1.1" />
+    <PackageReference Include="Volo.Abp.OpenIddict.Domain.Shared" Version="7.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\Mantenimiento\*.json" />
+    <Content Remove="Localization\Mantenimiento\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>
