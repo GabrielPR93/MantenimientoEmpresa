@@ -15,8 +15,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
     <ProjectReference Include="..\Mantenimiento.Application.Tests\Mantenimiento.Application.Tests.csproj" />
     <ProjectReference Include="..\..\src\Mantenimiento.Web\Mantenimiento.Web.csproj" />
